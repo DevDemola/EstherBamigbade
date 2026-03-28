@@ -1,0 +1,123 @@
+.expert {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 80px 20px;
+  
+}
+.expert {
+  position: relative;
+  background: #050505;
+  padding: 100 6%;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hero-bg-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #ff3c00, #0d0d0d);
+  opacity: 0.08;
+  animation: rotateGlow 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGlow {
+  100% { transform: rotate(360deg); }
+  100% { transform: rotate(720deg); }
+}
+
+/* make content sit above glow */
+.expert-container {
+  position: relative;
+  z-index: 1;
+}
+
+.expert h2 {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  margin-bottom: 70px;
+  /* margin-top: 20%; */
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/* GRID FIX (better spacing + responsiveness) */
+.expert-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* TOOL CARD */
+.tool {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  padding: 18px 12px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.tool:hover {
+  transform: translateY(-6px);
+  border-color: #ff3c00;
+}
+
+/* ICON SIZE */
+.tool svg {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.tool span {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* CUSTOM ICON (for Clip Studio & Toon Boom) */
+.custom-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #ff3c00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.custom-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: brightness(0.95);
+}
+
+/* makes image behave like svg icons */
+.tool img {
+  display: block;
+  margin: 0 auto 10px;
+}
+/* MOBILE POLISH */
+@media (max-width: 500px) {
+  .expert {
+    padding: 60px 15px;
+  }
+
+  .expert-tools {
+    gap: 15px;
+  }
+
+  .tool {
+    padding: 15px 10px;
+  }
+}

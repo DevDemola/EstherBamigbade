@@ -1,0 +1,85 @@
+.marquee-section {
+  background: #000;
+ padding: 4px 0;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* fade edges */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px; /* slightly smaller */
+  height: 100%;
+  z-index: 2;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #000, transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #000, transparent);
+}
+
+.marquee-content {
+  display: flex;
+  gap: 15px; /* 🔥 tighter spacing between items */
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  align-items: center; /* keeps everything centered vertically */
+}
+
+/* TEXT */
+.marquee-content span {
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1; /* 🔥 removes extra vertical spacing */
+  padding: 2px 0; /* tiny breathing space */
+}
+
+/* dot */
+.marquee-content span::after {
+  content: "•";
+  margin-left: 10px; /* 🔥 tighter dot spacing */
+  color: orangered;
+}
+
+/* animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* hover pause */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .marquee-content span {
+    font-size: 10px;
+  }
+
+  .marquee-content {
+    gap: 12px;
+  }
+}

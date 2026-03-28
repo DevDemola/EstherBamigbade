@@ -1,0 +1,61 @@
+.showreel {
+  background: #0d0d0d;
+  color: whitesmoke;
+  padding: 40px 50px;
+}
+
+.showreel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showreel h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.showreel p {
+  margin-bottom: 40px;
+  color: #ccc;
+  font-size: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* VIDEO FULL-WIDTH RESPONSIVE */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MOBILE POLISH */
+@media (max-width: 768px) {
+  .showreel {
+    padding: 60px 15px;
+  }
+
+  .showreel h2 {
+    font-size: 1.8rem;
+  }
+
+  .showreel p {
+    font-size: 0.95rem;
+  }
+}

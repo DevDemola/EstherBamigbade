@@ -1,0 +1,62 @@
+.carousel-section {
+  /* padding: 60px 20px; */
+  background: #0d0d0d;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
+
+.carousel-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.carousel-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  color: #fff;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.overlay h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.carousel-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.6);
+}

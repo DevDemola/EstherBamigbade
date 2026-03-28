@@ -1,0 +1,61 @@
+.nav-buttons-section {
+  background: #0D0D0D; /* Black background */
+  padding: 80px 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn-red,
+.btn-white {
+  flex: 1; /* wide buttons */
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Renegade Red button */
+.btn-red {
+  background: #FF3C00;
+  color: #fff;
+  border: none;
+}
+
+.btn-red:hover {
+  opacity: 0.85;
+}
+
+/* White button */
+.btn-white {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.btn-white:hover {
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn-red,
+  .btn-white {
+    width: 100%;
+  }
+}
