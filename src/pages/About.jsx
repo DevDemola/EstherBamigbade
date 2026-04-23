@@ -17,10 +17,12 @@ const About = () => {
           <p className="about-intro">
             My name is <strong>Esther Bamigbade.</strong> I work as a
             Post-Production Artist and Visual Storyteller in Lagos, Nigeria. I
-            have about five years of experience working on creative projects. I
-            focus on the final stage of production, where I take raw ideas and
-            turn them into polished, professional visuals that tell a clear
-            story.
+            have about five years of experience working on creative projects.
+            <p>
+              I focus on the final stage of production, where I take raw ideas
+              and turn them into polished, professional visuals that tell a
+              clear story.
+            </p>
             <p>
               I do video editing and combine visuals in a smooth way so
               everything flows naturally. I also work on color and lighting to
@@ -43,8 +45,8 @@ const About = () => {
         </div>
       </div>
       <Services />
-     <ExpertArea/>
-     <Experience/>
+      <ExpertArea />
+      <Experience />
       <section className="cta">
         <h3 className="cta-title">Let’s Work Together</h3>
 

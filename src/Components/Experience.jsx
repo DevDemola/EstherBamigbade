@@ -7,10 +7,9 @@ const Experience = () => {
       <section className="experience">
         <div className="experience-header">
           <h1>
-             PROFESSIONAL <span>JOURNEY</span>
+            PROFESSIONAL <span>JOURNEY</span>
           </h1>
           <span className="experience-tag">— EXPERIENCE</span>
-          
         </div>
 
         <div className="experience-list">
@@ -72,19 +71,19 @@ const Experience = () => {
               <h2>MOSHOOD ABIOLA POLYTECHNIC</h2>
               {/* <p className="company">Mshel Homes Ltd · Abuja, Nigeria</p> */}
               <p className="desc">
-                Led end-to-end development of company website driving 60%
-                increase in lead generation. Designed Expense Management System
-                with real-time dashboard reducing manual data entry by 70%.
-                Co-developed HR Appraisal Dashboard cutting processing time by
-                59%.
+                Handled administrative tasks including document management,
+                scheduling, and correspondence. Improved office efficiency by
+                organizing records and reducing manual workload. Supported team
+                coordination and communication, contributing to smoother daily
+                operations.
               </p>
             </div>
 
             <div className="experience-tags">
-              <span>Angular</span>
-              <span>Supabase</span>
-              <span>TypeScript</span>
-              <span>Tailwind CSS</span>
+              <span>Office Administration</span>
+              <span>Communication (Written & Verbal)</span>
+              <span>Customer Service</span>
+              
             </div>
           </div>
 

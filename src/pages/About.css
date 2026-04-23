@@ -34,15 +34,11 @@
   font-size: 0.95rem;
   line-height: 1.8; /* smooth readability */
   color: #9ca3af; /* soft grey */
-  font-weight: 300; /* thin text */
+  font-weight: 400;
   margin-bottom: 18px;
   width: 100%;
 }
 
-/* first paragraph slightly stronger */
-.about-content p:first-child {
-  color: #d1d5db;
-}
 
 /* highlight your name only */
 .about-content strong {

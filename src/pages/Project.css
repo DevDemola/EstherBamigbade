@@ -112,3 +112,24 @@
   height: auto;
   border-radius: 10px;
 }
+/* COMPANY GROUP WRAPPER */
+.company-group {
+  margin-bottom: 50px;
+}
+
+/* COMPANY NAME */
+.company-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* OPTIONAL: spacing between groups */
+.graphics-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
