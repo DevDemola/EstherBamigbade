@@ -74,14 +74,14 @@ const Hero = () => {
           </p>
 
           <div className="buttons">
+            <button className="primary" onClick={() => navigate("/about")}>
+              About
+            </button>
             <button className="primary" onClick={() => navigate("/project")}>
               View Work <FiArrowRight />
             </button>
             <button className="secondary" onClick={() => navigate("/contact")}>
               Let’s Talk
-            </button>
-            <button className="primary" onClick={() => navigate("/about")}>
-              About
             </button>
           </div>
         </div>

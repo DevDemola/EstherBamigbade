@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom"; // ✅ Use NavLink for active detection
+import { Navigate, NavLink } from "react-router-dom"; // ✅ Use NavLink for active detection
 import "./Header.css";
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="nav-container">
         {/* Logo */}
-        <div className="logo">EB</div>
+        <NavLink className="logo" onClick={()=> navigate("/about")}>EB</NavLink>
 
         {/* Hamburger */}
         <div
