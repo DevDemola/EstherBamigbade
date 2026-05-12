@@ -40,7 +40,9 @@ const About = () => {
           </p>
 
           <div className="about-actions">
-            <button className="btn">DOWNLOAD CV</button>
+            <a href="/CV.pdf" download>
+              <button className="btn">DOWNLOAD CV</button>
+            </a>
           </div>
         </div>
       </div>
