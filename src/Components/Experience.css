@@ -72,19 +72,19 @@
 
 .desc {
   color: #d1d5db;
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  /* line-height: 1.2; */
   max-width: 800px;
-  font-weight: 400;
+  font-weight: 200;
   /* font-display; */
 }
 .first {
   font-size: 5px;
   color: #d1d5db;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.0rem;
+  /* line-height: 1.6; */
   max-width: 800px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .experience-tags {
   display: flex;
