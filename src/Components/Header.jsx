@@ -9,8 +9,9 @@ const Header = () => {
     <header className="header">
       <div className="nav-container">
         {/* Logo */}
-        <NavLink className="logo" onClick={()=> navigate("/about")}>EB</NavLink>
-
+        <NavLink to="/" className="logo">
+          EB
+        </NavLink>
         {/* Hamburger */}
         <div
           className={`hamburger ${menuOpen ? "open" : ""}`}
