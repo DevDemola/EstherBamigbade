@@ -2,7 +2,7 @@
   background: #050505;
   color: #fff;
   padding: 80px 6%;
-  padding-top:10 ;
+  padding-top: 10;
   margin-top: 0%;
   font-family: "Inter", sans-serif;
 }
@@ -72,12 +72,20 @@
 
 .desc {
   color: #d1d5db;
-  font-size: 10px;
-  /* line-height: 1.6; */
-  max-width: 600px;
-  font-weight: 300;
+  font-size: 0.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  font-weight: 400;
+  /* font-display; */
 }
-
+.first {
+  font-size: 5px;
+  color: #d1d5db;
+  font-size: 0.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  font-weight: 400;
+}
 .experience-tags {
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +124,6 @@
   }
 
   .desc {
-    font-size: 13px;
+    font-size: 8px;
   }
 }
